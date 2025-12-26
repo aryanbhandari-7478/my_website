@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aryan Bhandari - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>  
+  <!-- Animated Background Layers -->
+  <div class="grid-bg"></div>
+  <div class="gradient-overlay"></div>
+  <div class="scanlines"></div>
+
+  <!-- Animated Shapes -->
+  <div class="shapes-container">
+    <div class="shape shape-circle"></div>
+    <div class="shape shape-triangle"></div>
+    <div class="shape shape-square"></div>
+  </div>
+
+  <!-- Floating Particles -->
+  <div id="particles"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo-link">
+        <a href="#home" class="nav-avatar">
+  <img src="images\my_photo2.png" alt="Aryan Bhandari">
+</a>
+
+        <span class="logo-text">Aryan Bhandari</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#others" class="nav-link">Others</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+<!-- HERO SECTION -->
+<main class="hero" id="home">
+
+  <!-- LEFT -->
+  <section class="intro">
+
+    <h1 class="hero-name">
+      <span class="name">Hey, I’m Aryan.</span>
+    </h1>
+
+    <p class="subtitle">
+      I work at the intersection of theory and real-world systems,
+      turning mathematics into deployable intelligence.
+    </p>
+
+    <div class="typing-wrapper">
+      <span class="typing-text" id="typingText"></span>
+      <span class="typing-cursor">|</span>
+    </div>
+
+    <div class="cta-row">
+      <a class="btn primary" href="docs\Aryan_Bhandari_Resume.pdf" download>Download Resume</a>
+      <a class="btn primary" href="#about">View more</a> 
+    </div>
+  </section>
+
+  
+  <!-- RIGHT: 3D Loss Landscape -->
+  <div class="canvas-wrap" id="three-root">
+    <div class="canvas-overlay">
+      <div class="math-pill">Gradient Descent - Loss Landscape</div>
+    </div>
+  </div>
+
+</main>
+
+
+<!-- ABOUT ME SECTION -->
+<section class="about" id="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="about-container">
+    
+    <!-- Photo -->
+    <div class="about-photo">
+      <img src="images\my_photo.png" alt="Portrait of Aryan Bhandari">
+    </div>
+
+    <!-- Text -->
+<div class="about-text">
+  <p>
+    I’m a Computer Science undergraduate focused on Data Science, Artificial Intelligence, and cybersecurity,
+    driven by curiosity and a strong preference for building real systems over just learning theory.
+  </p>
+  <p>
+    Currently pursuing my B.S. (Hons) in Computer Science at Sri Sathya Sai Institute of Higher Learning,
+    my interests lie in developing intelligent, data-driven solutions and understanding how modern systems
+    can be secured, optimized, and scaled.
+  </p>
+  <p>
+    I actively work on projects involving intrusion detection, health monitoring, optimization techniques,
+    and predictive analytics, with the goal of creating practical, high-impact solutions that perform
+    reliably in real-world environments.
+  </p>
+</div>
+
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+  
+  <!-- SKILLS SECTION -->
+  <section class="features" id="about">
+    <h2 class="section-title">Skills</h2>
+    <div class="features-container">
+      <div class="feature-tabs">
+        <div class="tab-item active" data-tab="performance">📊 Programming & Web</div>
+        <div class="tab-item" data-tab="security">🖥️ Computer Science</div>
+        <div class="tab-item" data-tab="network">📈 Data Science & AI</div>
+        <div class="tab-item" data-tab="analytics">⚡ Mathematics</div>
+        <div class="tab-item" data-tab="non_techenical_skills">☕ Non-Technical Skills</div>
+      </div>
+
+      <div class="feature-content">
+        <!-- Programming -->
+        <div class="content-panel active" id="performance">
+          <h3>Programming & Web Development</h3>
+          <ul class="feature-list">
+            <li>C / C++</li>
+            <li>Python</li>
+            <li>Java / JavaScript</li>
+            <li>HTML / CSS</li>
+            <li>Django / Flask</li>
+            <li>Object-Oriented Programming (OOP)</li>
+          </ul>
+        </div>
+
+        <!-- CS -->
+        <div class="content-panel" id="security">
+          <h3>Computer Science</h3>
+          <ul class="feature-list">
+            <li>Computer Networks</li>
+            <li>Operating Systems</li>
+            <li>SQL (MySQL)</li>
+            <li>Database Management Systems</li>
+            <li>Data Structures & Algorithms</li>
+            <li> Basic understanding of Cyber security</li>
+          </ul>
+        </div>
+
+        <!-- DS & AI -->
+        <div class="content-panel" id="network">
+          <h3>Data Science & AI</h3>
+          <ul class="feature-list">
+            <li>Machine Learning Algorithms</li> 
+            <li>Time Series Forecasting</li>
+            <li>Deep Learning</li>
+            <li>Big Data Analytics</li> 
+            <li>Data Visualization</li>
+            <li>MS Excel</li>
+          </ul>
+        </div>
+
+        <!-- Math -->
+        <div class="content-panel" id="analytics">
+          <h3>Mathematics for AI</h3>
+          <ul class="feature-list">
+            <li>Calculus</li>
+            <li>Probability & Statistics</li>
+            <li>Linear Algebra</li>
+            <li>Optimization Techniques</li>
+            <li>Discrete Mathematics</li>
+          </ul>
+        </div>
+
+
+        <!-- Non-Tech -->
+        <div class="content-panel" id="non_techenical_skills">
+          <h3>Non-Technical Skills</h3>
+          <ul class="feature-list">
+            <li>Team Management</li>
+            <li>Leadership</li>
+            <li>Disaster Management</li>
+            <li>Public Speaking</li>
+            <li>Musician / Guitarist</li>
+            <li>Football</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+<!-- PROJECTS SECTION -->
+<section class="projects" id="projects">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="projects-container">
+
+<!-- Project Card Template -->
+<div class="project-card" 
+     data-title="Intrusion Detection" 
+     data-domain="Artificial Intelligence • Cybersecurity " 
+     data-overview="A machine learning system designed to detect and classify network intrusions in real-time. Utilizes the NSL-KDD dataset, preprocessing network traffic data to remove noise and balance class distributions. Employs XGBoost for multi-class attack classification and visualizes predictions on an interactive Streamlit dashboard. Optimized for accuracy, interpretability, and real-time analysis." 
+     data-features="Real-time intrusion detection with multi-class attack classification, Data preprocessing including normalization, missing value handling, and feature selection, Class balancing using SMOTE, XGBoost-based model for high accuracy predictions, Interactive Streamlit dashboard for live CSV upload and prediction visualization, Decision explanation and visualization of feature importance" 
+     data-tech="Python, Machine Learning, Data Visualization, Data Processing" 
+     data-github="https://github.com/aryanbhandari-7478/Intrusion-Detection---NSL_KDD">
+  <img src="project_pics\intrusion.jpg" alt="Cyber Intrusion Detection">
+  <div class="project-info">
+    <h3>Network Intrusion Detection using Machine Learning</h3>
+    <p>Built an Intrusion Detection System using the NSL-KDD dataset. Implemented preprocessing, class balancing (SMOTE), feature selection, and XGBoost for multi-class attack detection. Deployed an interactive Streamlit dashboard for real-time prediction on raw network traffic data using CSV.</p>
+    <div class="tech-stack">
+      <span>Python</span>
+      <span>Machine Learning</span>
+      <span>Data Visualization</span>
+    </div>
+    <button class="btn view-details">View Details</button>
+  </div>
+  
+</div>
+
+<div class="project-card" 
+     data-title="Logistic Regression from Scratch" 
+     data-domain="Machine Learning • Programming • Mathematics" 
+     data-overview="A custom implementation of logistic regression using only NumPy for educational and experimental purposes. Designed to classify binary datasets with L2 regularization and gradient descent optimization. Demonstrates convergence analysis, decision boundary visualization, and benchmarking against scikit-learn’s logistic regression. Applied to synthetic datasets and the Wisconsin Breast Cancer dataset for practical validation." 
+     data-features="Logistic regression implemented entirely from scratch in NumPy, L2 regularization to prevent overfitting, Gradient descent optimization with step size tuning, Convergence analysis via loss tracking, Visualization of decision boundaries and model predictions, Benchmarking against scikit-learn for accuracy and efficiency, Extensible to other binary classification datasets" 
+     data-tech="Python-NumPy,Sigmoid Function , Machine Learning" 
+     data-demo="#" 
+     data-github="https://github.com/aryanbhandari-7478/Custom_Logistic_Regression/blob/main/logistic_regression_from_scratch.ipynb">
+  <img src="project_pics\logistic.jpg" alt="Logistic Regression from Scratch">
+  <div class="project-info">
+    <h3>Logistic Regression from Scratch</h3>
+    <p>Implemented logistic regression from scratch using NumPy with L2 regularization and gradient descent. Validated on synthetic data and the Wisconsin Breast Cancer dataset. Includes convergence analysis, decision boundary visualization, and benchmarking against scikit-learn.</p>
+    <div class="tech-stack">
+      <span>Machine Learning</span>
+      <span>Python - NumPy</span>
+    </div>
+    <button class="btn view-details">View Details</button>
+  </div>
+</div>
+
+
+
+
+<!-- View detailed Project Container -->
+<div id="project-modal" class="project-modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+
+    <h3 id="modal-title">Project Title</h3>
+    <div id="modal-images" class="modal-images"></div>
+
+    <p id="modal-domain" class="modal-domain"></p>
+
+    <h4>Overview</h4>
+    <p id="modal-overview"></p>
+
+    <h4>Key Features</h4>
+    <ul id="modal-features"></ul>
+
+    <h4>Technologies</h4>
+    <div id="modal-techstack" class="tech-stack"></div>
+
+    <!-- Only GitHub button -->
+    <div class="modal-links">
+  <a id="modal-github" href="https://github.com/aryanbhandari-7478/Intrusion-Detection---NSL_KDD" target="_blank" class="view-experience">Git Hub</a>
+</div>
+
+
+  </div>
+</div>
+
+
+  <!-- Image Overlay -->
+  <div id="image-overlay" class="image-overlay">
+    <span class="overlay-close">&times;</span>
+    <img id="overlay-img" src="" alt="Expanded Project Image">
+  </div>
+</section>
+
+
+
+
+
+<!-- EXPERIENCE SECTION -->
+<section class="experience" id="experience">
+  <h2 class="section-title">Experience</h2>
+
+  <div class="experience-container">
+
+    <!-- EXPERIENCE 1 --> 
+    <div class="experience-card">
+  <div class="experience-left">
+    <img src="logos\iit_ropar.png" alt="IIT Ropar Logo">
+  </div>
+  <div class="experience-right">
+    <h3>Research Intern</h3>
+    <h4>Indian Institute of Technology, Ropar</h4>
+    <p class="duration-location">May 2025 – Jul 2025</p>
+    
+    <p><strong>Project: Speech Completion Prediction</strong></p>
+    <ul>
+      <li>
+        Developed a real-time machine learning pipeline to estimate speech progress using 
+        semantic clustering and structural text features.
+      </li>
+      <li>
+        Engineered an NLP system using <strong>Sentence-BERT (all-mpnet-base-v2)</strong> 
+        for embeddings, followed by <strong>PCA</strong> and <strong>UMAP</strong> for dimensionality reduction, 
+        and <strong>HDBSCAN</strong> for topic clustering.
+      </li>
+      <li>
+        Trained a <strong>LightGBM Regressor</strong> that achieved an <strong>R² score of 0.73</strong> 
+        and an MAE of 11.04.
+      </li>
+      <li>
+        Built and deployed a full-stack web interface using the <strong>MERN Stack</strong> 
+        (MongoDB, Express, React, Node) and Dockerized the Python ML backend for reproducibility.
+      </li>
+    </ul>
+    
+    <!-- GitHub Button -->
+
+  <div class="experience-buttons">
+  <a class="view-experience" href="https://github.com/ananya-thakur25/speech-progress-estimation" target="_blank">
+    GitHub
+  </a>
+  <a class="view-experience" href="docs\Internship_Report_Aryan-Bhandari_SUM25344000.pdf" target="_blank">
+    View Report
+  </a>
+</div>
+
+  </div>
+</section>
+
+
+<!-- VOLUNTARY EXPERIENCE SECTION -->
+<section class="experience" id="experience">
+  <h2 class="section-title">VOLUNTARY EXPERIENCE</h2>
+
+  <div class="experience-container">
+
+
+<!-- VOLUNTARY EXPERIENCE 1 -->
+<div class="experience-card">
+  <div class="experience-left">
+    <img src="logos\ncc.jpg" alt="NCC Logo">
+  </div>
+  <div class="experience-right">
+    <h3>Sergeant</h3>
+    <h4>National Cadet Corps India (Army Wing)</h4>
+    <p class="duration-location">Sept 2019 – Jun 2022</p>
+    <p>
+      Served as a senior cadet in the 16 Bengal Battalion, Sukna, West Bengal. Actively participated in rigorous training programs covering weapon handling, tactical drills, disaster management, map reading, and leadership exercises. Led and coordinated squad-level activities, including physical fitness regimes, parade practice, and strategic planning exercises. Played a key role in mentoring junior cadets, fostering teamwork, discipline, and problem-solving skills. Participated in national-level camps, adventure training, and community service initiatives, strengthening both leadership and civic responsibility.
+    </p>
+  </div>
+</div>
+
+<!-- VOLUNTARY EXPERIENCE 2 -->
+<div class="experience-card">
+  <div class="experience-left">
+    <img src="logos\sai.jpg" alt="Sai Organization Logo">
+  </div>
+  <div class="experience-right">
+    <h3>Youth Member</h3>
+    <h4>Sri Sathya Sai Seva Organization, India</h4>
+    <p class="duration-location">2010 – Present</p>
+    <p>
+      Dedicated youth volunteer contributing to social welfare and community development programs under the Sri Sathya Sai Seva Organization. Engaged in organizing and participating in blood donation camps, environmental awareness drives, and educational initiatives for underprivileged children. Promoted values of selfless service, empathy, and discipline through active involvement in both local and regional service activities. Developed organizational and leadership skills while collaborating with fellow volunteers to execute impactful service projects for the community.
+    </p>
+  </div>
+</div>
+
+<!-- VOLUNTARY EXPERIENCE 3 -->
+<div class="experience-card">
+  <div class="experience-left">
+    <img src="logos\music.jpg" alt="Music Group Logo">
+  </div>
+  <div class="experience-right">
+    <h3>Guitarist - Music Group</h3>
+    <h4>Sri Sathya Sai Institute of Higher Learning</h4>
+    <p class="duration-location">2023 – Present</p>
+    <p>
+      Performing as a lead and bass guitarist in the campus music ensemble, contributing to cultural and spiritual programs within the institute. Composed and arranged musical pieces for inter-college events, devotional gatherings, and community celebrations. Collaborated with fellow musicians to create cohesive performances that enhance audience engagement and campus life. Developed stage presence, teamwork, and creative expression while balancing academic commitments, demonstrating dedication and versatility in extracurricular pursuits.
+    </p>
+  </div>
+</div>
+
+
+    
+    
+  </div>
+</section>
+
+</div>
+
+
+
+
+
+
+<!-- EDUCATION SECTION -->
+<section class="features" id="others">
+  <h2 class="section-title">Education</h2>
+  <div class="features-container">
+    
+    <!-- Tabs (left side with logos) -->
+    <div class="feature-tabs">
+      <div class="tab-item active" data-tab="bsc">
+        <img src="logos\sssihl.png" alt="University Logo" class="tab-logo"> 
+        B.S. (Hons) in Computer Science
+      </div>
+      <div class="tab-item" data-tab="schooling">
+        <img src="logos\aps.png" alt="School Logo" class="tab-logo"> 
+        Schooling
+      </div>
+    </div>
+
+    <!-- Content Panels (right side) -->
+    <div class="feature-content">
+      
+      <!-- B.S -->
+      <div class="content-panel active" id="bsc">
+        <h3>B.S. (Hons) in Computer Science</h3>
+        <p><strong>Minor & Specialization:</strong> Data Science & Artificial Intelligence</p>
+        <p style="margin-bottom:14px;opacity:0.9">
+        Pursuing a honours degree with a specialization in Data Science &amp; Artificial Intelligence.
+        Coursework and projects emphasize solid foundation in mathematics for AI & CS, operating system concepts, computer networks, machine learning, deep learning, time-series modelling, and applied systems engineering
+        for real-world problems.
+      </p>
+        <p><em>July 2023 – Present   </em></p>
+
+        <ul class="feature-list">
+          <li>Location : Sri Sathya Sai Institute of Higher Learning, Prasanthi Nilayam, Andhra Pradesh, India</li>
+          
+          <li>Current Semester: VI</li>
+        </ul>
+      </div> 
+      
+
+      <!-- Schooling -->
+      <div class="content-panel" id="schooling">
+        <h3>Army Public School Sukna</h3>
+        <p><strong>Location: </strong> Sukna Military Station, West Bengal, India</p>
+        <p><em>Apr 2009 – Apr 2023</em></p>
+        <ul class="feature-list">
+          <li>CBSE Curriculum</li>
+          <li>Subjects: Physics, Chemistry, Mathematics</li>
+          <li>Completed AISSC (Class XII) in 2023</li>
+          <li>Vice Head Boy 2022-23</li>
+          <li>Skills acquired :  Discipline, Leadership, Team Management, Music</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- CERTS & LANGUAGES -->
+  <section class="features" id="others"> 
+    <h2 class="section-title">Certifications & Languages</h2>
+    <div class="features-container" style="grid-template-columns: 1fr;">
+      <div class="feature-content" style="min-height: auto;">
+        <h3>Certifications</h3>
+        <ul class="feature-list">
+          <li>Cyber Security and Privacy – IIT Madras</li>
+          <li>Introduction to Machine Learning – Great Learning</li>
+          <li>Machine Learning with Python – IBM</li>
+        </ul>
+
+        <h3 style="margin-top:50px;">Languages</h3>
+        <ul class="feature-list">
+          <li>English - Professionally fluent</li>
+          <li>Hindi - Native speaker</li>
+          <li>Nepali - Native speaker</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+<!-- GALLERY SECTION -->
+<section id="gallery" class="gallery">
+    <h2 class="section-title">Gallery</h2>
+    <div class="gallery-container">
+        <div class="gallery-track">
+            <img src="images\image1.jpg"
+     data-title="University Orchestra"
+     data-desc="Served as the lead guitarist in the University Orchestra during an inter-house cultural competition between Varunas and Suryas at the SSSIHL Nandigiri Campus. This performance took place in my first year and involved extensive rehearsals, coordination with fellow musicians, and live stage execution. Varuna House emerged victorious, making the experience especially rewarding. The event strengthened my musical discipline, teamwork, and confidence in performing before a large audience, while also becoming one of the most memorable highlights of my early university life."
+     alt="Pic 1">
+
+            <img src="images/image2.jpg"
+     data-title="Vedam Competition"
+     data-desc="Participated in the Vedam competition held at the SSSIHL Nandigiri Campus as part of the Annual Cultural and Sports Meet. Although no position was secured, the experience was deeply enriching, involving the learning and recitation of a substantial number of Vedic ślokas with proper pronunciation, rhythm, and discipline. The competition reinforced the integral role of Vedic study in the life of a Sai student, emphasizing values of concentration, humility, spiritual grounding, and sustained practice beyond outcomes or rankings.
+ "
+     alt="Pic 2">
+
+<img src="images/image3.jpg"
+     data-title="Last day in Uniform"
+     data-desc="Receiving a Certificate of Appreciation from the Principal of Army Public School, Sukna, Mrs. Dola Sinha Sarkar, in the presence of CTO Ujjal Dhar. This moment marked my formal farewell to the National Cadet Corps as I prepared to leave the school after completing Class 12. Held at APS Sukna in January 2023, it was a meaningful closure to my NCC journey, symbolizing years of discipline, leadership training, and service, and reflecting the values and confidence shaped during my time in the organization.
+ "
+     alt="Pic 3">
+
+<img src="images/image11.jpg"
+     data-title="Republic Day"
+     data-desc="A candid moment from Republic Day 2023 at Army Public School, Sukna, where I’m seen holding a cane stick after the event. The photo captures a simple, unscripted part of the day rather than a formal ceremony—more about being present, participating, and sharing the atmosphere with classmates and teachers than anything symbolic. Taken at APS Sukna, it reflects an ordinary yet memorable snapshot from the final phase of my school life.
+"
+     alt="Pic 4">
+
+<img src="images/image14.jpg"
+     data-title="Hammer Throw"
+     data-desc="This picture shows me in the middle of a hammer throw attempt during an individual sports event. The 6 kg hammer is in full swing as I rotate to build momentum before the release. Although I did not secure a winning position, the experience pushed my physical limits and tested technique, balance, and focus. It was less about the result and more about giving an honest attempt and learning from the process.
+ "
+     alt="Pic 5">
+
+<img src="images/my_photo.png"
+     data-title="Me"
+     data-desc="A quiet moment to pause and reflect on the journey so far. I see myself as someone constantly evolving — learning from experiences, adapting to challenges, and staying grounded despite ambitions. Whether in academics, discipline-driven environments, or creative spaces, I try to carry sincerity, curiosity, and self-awareness forward, focusing more on growth than perfection.
+"
+     alt="Pic 6">
+
+<img src="images/image5.jpeg"
+     data-title="Cultural Champion Runner-up 2025"
+     data-desc="This photo captures the moment I received the Runner-Up trophy for the Cultural Championship at Sri Sathya Sai Institute of Higher Learning. The award was based on securing the highest cumulative points across multiple cultural competitions, reflecting consistent effort rather than a single event. The trophy was presented by the Vice Chancellor at Sai Kulwant Hall in January 2025. It remains one of my most meaningful memories at SSSIHL, marking a phase where sustained hard work paid off. I remain deeply grateful to Swami, Sri Sathya Sai Baba, for the guidance and blessings that made this journey possible.
+ "
+     alt="Pic 7">
+
+<img src="images/image6.jpeg"
+     data-title="Dussera Celebrations"
+     data-desc="This was during the Dussehra celebrations at Sai Kulwant Hall on 26 September 2025. I played bass guitar as part of the Nandigiri music group, representing my campus’s musical offering. The performance required tight coordination with the ensemble, rhythmic discipline, and sustained focus throughout the piece. Playing in such a spiritually charged and acoustically demanding space was both challenging and rewarding, and it strengthened my appreciation for collective effort, musical responsibility, and the discipline behind live performance.
+ "
+     alt="Pic 8">
+
+<img src="images/image7.jpeg"
+     data-title="Pic with Swami"
+     data-desc="This photo shows the entire music group gathered in front of the Samadhi of Sri Sathya Sai Baba at Sai Kulwant Hall. It was an inspiring moment of unity and collaboration, reflecting months of preparation and dedication that went into our musical performance. Standing together as a team, I felt the harmony, discipline, and mutual support that are essential for any group effort. The spiritual atmosphere of the Samadhi added a profound sense of purpose and connection to our music, making this moment particularly memorable and meaningful in my journey at SSSIHL.
+ "
+     alt="Pic 9">
+
+<img src="images/image8.jpeg"
+     data-title="World Heart Day 2025"
+     data-desc="This photo captures the moment I demonstrated our fully offline machine learning model for predicting heart risk to Dr. Narula, President of the World Heart Federation, along with deputed cardiologists and trustees of the Central Trust, including Mr. R.J. Ratnakar and other dignitaries. Our system used physiological inputs such as blood pressure, height, weight, cholesterol, and glucose levels to generate accurate risk predictions. Presenting this project at World Heart Day 2025 in Prasanthi Nilayam was an incredible experience, combining technical innovation with real-world health impact. The interaction with experts and their insightful feedback made this one of the most significant and motivating moments of my academic journey.
+ "
+     alt="Pic 10">
+
+<img src="images/image9.jpg"
+     data-title="Football Match"
+     data-desc="In this photo, I’m seen shaking hands with the opposing team before the start of our football match. I played as a defender for Team Shaurya (Blue), while the opponents were Team Vikrama (Maroon). The match was intense, but we managed to win 3-2. It was held at the Hill View Stadium in Puttaparthi, and the experience of teamwork, strategy, and sportsmanship made it a memorable moment on the field.
+ "
+     alt="Pic 11">
+
+<img src="images/image10.jpg"
+     data-title="My batchmates"
+     data-desc="This photo was taken after the 2022 Orchestra Competition at SSSIHL Nandigiri campus. I’m seen holding my electric guitar and playfully making a monkey face, surrounded by my batchmates—the ones who have been my constant support throughout my campus life. Over four years, we shared classes, hostel rooms, and countless experiences together, forging bonds that will always remain close to my heart. These moments of camaraderie, laughter, and teamwork are memories I will cherish forever.
+ "
+     alt="Pic 12">
+
+
+<img src="images/image12.jpg"
+     data-title="Friendly match"
+     data-desc="This photo captures our football team, KOLO KOLO FC, cheering with a big Hurray!, just before the start of a match during my first year at college. I always cherish that excitement, team spirit, and the sense of camaraderie we shared as we stepped onto the field, ready to give our best.
+ "
+     alt="Pic 14">
+
+<img src="images/image13.jpg"
+     data-title="The place which made me who I am today"
+     data-desc="This image captures the Nandigiri campus, a place that has been home for so many years. Walking through its quiet pathways and green surroundings always brings back memories of long study sessions, laughter with friends, late-night talks, and the simple joys of student life. It’s more than just a campus—it’s where countless moments, friendships, and lessons have left a lasting imprint on my heart.
+ "
+     alt="Pic 15">
+    
+            
+        </div>
+    </div>
+    <div class="gallery-footer">
+        <hr>
+        <button class="view-more">View All</button>
+    </div>
+</section>
+
+<!-- GALLERY MODAL -->
+<div id="gallery-modal" class="gallery-modal">
+  <div class="gallery-modal-content">
+    <span class="gallery-close">&times;</span>
+
+    <div class="gallery-modal-left">
+      <h3 id="gallery-modal-title">Title</h3>
+      <p id="gallery-modal-desc">
+        Description goes here.
+      </p>
+    </div>
+
+    <div class="gallery-modal-right">
+      <img id="gallery-modal-img" src="" alt="Gallery Image">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- CONTACT SECTION -->
+<section class="contact" id="contact">
+  <h2 class="section-title">Get In Touch</h2>
+  <div class="contact-container">
+
+    <!-- Contact Form         its dummy. i wanna make it functional. is it possible? -->
+    <div class="contact-form">
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h3>Lets work Together, Connect With Me on ...</h3>
+
+      <div class="info-item">
+        <div class="info-icon">
+          <img src="logos\email.png" alt="Email">
+        </div>
+        <div class="info-details">
+          <h4>Email</h4>
+          <p>aryanbhandari7478@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon">
+          <img src="logos\linkedin.jpg" alt="LinkedIn">
+        </div>
+        <div class="info-details">
+          <h4>LinkedIn</h4>
+          <a href="https://www.linkedin.com/in/aryan-bhandari-aa82a8293/" target="_blank">Aryan Bhandari</a>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon">
+          <img src="logos\github.png" alt="github">
+        </div>
+        <div class="info-details">
+          <h4>Github</h4>
+          <a href="https://github.com/aryanbhandari-7478" target="_blank">@aryanbhandari-7478</a>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon">
+          <img src="logos\whatsapp.png" alt="Phone">
+        </div>
+        <div class="info-details">
+          <h4>Phone / WhatsApp</h4>
+          <p>+91 7478484491</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon">
+          <img src="logos\ig.jpg" alt="Instagram">
+        </div>
+        <div class="info-details">
+          <h4>Instagram</h4>
+          <a href="https://www.instagram.com/aryan_23420z" target="_blank">@aryan_23420z</a>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon">
+          <img src="logos\location.png" alt="Location">
+        </div>
+        <div class="info-details">
+          <h4>Location</h4>
+          <p>Darjeeling, West Bengal, India - 734201</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+            </div>
+            <p class="copyright">© 2026 Aryan. All rights reserved. | Design: @aryanbhandari-7478</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
