@@ -113,7 +113,7 @@ viewMoreBtn.addEventListener("click", () => {
     galleryContainer.style.overflowX = "auto";
 
     // Optional UX touch
-    viewMoreBtn.textContent = "Scroll →";
+    viewMoreBtn.textContent = "Scroll / Click on the image";
     viewMoreBtn.disabled = true;
 });
 
@@ -376,3 +376,4 @@ if(modalContent) {
   `;
   document.head.appendChild(style);
 }
+
